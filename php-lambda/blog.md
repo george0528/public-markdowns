@@ -160,5 +160,6 @@ endpoint: GET - https://oqfwjfhf1j.execute-api.ap-northeast-1.amazonaws.com/
 ![APIの結果画像](./%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%20(619).png)
 
 # 終わりに
-最後までご覧いただきありがとうございました！
-今回は固定されたJSONを返すだけのAPIをLambdaにデプロイしましたが、今後はLambdaからLambdaを呼び出す処理などもうちょっと複雑な処理について別の記事を書いていこうと思います。
+最後までご覧いただきありがとうございました！<br>
+今回は固定されたJSONを返すだけのAPIをLambdaにデプロイしましたが、今後はLambdaからLambdaを呼び出す処理などもうちょっと複雑な処理について別の記事を書いていこうと思います。<br>
+今回使ったファイルを[github](https://github.com/george0528/public-markdowns/tree/master/php-lambda)にあげているため参考にしてみたください。
