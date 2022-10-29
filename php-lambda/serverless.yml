@@ -1,0 +1,25 @@
+service: php-lambda-test # サービス名を変更
+
+provider:
+    name: aws
+    region: ap-northeast-1 # リージョンを東京に変更
+    runtime: provided.al2
+
+plugins:
+    - ./vendor/bref/bref
+
+functions:
+    api:
+        handler: index.php # ファイル名
+        description: ''
+        timeout: 28 # in seconds (API Gateway has a timeout of 29 seconds)
+        layers:
+            - ${bref:layer.php-80} # レイヤーをfpmから変更する
+        events:
+            -   httpApi: 'GET /' # パスとメソッドを変更
+
+# Exclude files from deployment
+package:
+    patterns:
+        - '!node_modules/**'
+        - '!tests/**'
